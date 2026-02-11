@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Display a fun story for each user in /etc/passwd
+
+while IFS=: read -r username password uid gid _ home shell
+do
+    echo "The user $username is part of the $gid gang, lives in $home and rides $shell. UID's place is protected by the passcode $password, more info about the user here: $uid"
+done < /etc/passwd
+
+
