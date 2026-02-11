@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#This code uses while loop and if statements to display different ouput on 4 and 8 
 count=1
 while (( count<=10 ))
 do
