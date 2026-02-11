@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Display a fun story for each user in /etc/passwd
 
 while IFS=: read -r username password uid gid _ home shell
