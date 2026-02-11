@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#displaying files that have - and in a list format
+for file in *
+do 
+if [[ "$file" == *-* ]]; then
+echo "${file#*-}"
+else 
+echo "$file"
+fi
+done
